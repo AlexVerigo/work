@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+form, input, select, button {
+    border-radius: 5px;
+}
+form {
+    width: 773px;
+    height: 437px;
+    background-color: #EFEFEF;
+    margin: 60px auto 0 ;
+}
+fieldset {
+    border: 0;
+    padding-top: 30px;
+    margin-right: 29px;
+    margin-left: 30px; 
+}
+input, select {
+    color: #666666;
+    border: 1px solid #E0E0E0;
+    padding: 15px 0px 16px 15px ;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+}
+.person-name {
+    width: 50%;
+    float: left;
+}
+.person-surname {
+    padding-left: 10px;
+}
+input:required + .help-text::before {
+    content: 'Заполните поле';
+  }
+.help-text {
+      font-size: 12px;
+      color: #F03838;
+  }
+.action-button {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 15px 24px 16px;
+    background-color: #EE811C;
+    border: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    form {
+        width: 100%;
+    }
+    fieldset {
+        margin: 0 auto;
+        width: 75%;
+        padding-top: 10px;
+    }
+    label {
+        font-size: 12px;
+    }
+    .person-name {
+        padding-bottom: 10px;
+    }
+    .person-name, .person-surname {
+        width: 100%;
+        padding: 0px;
+    }
+    .button {
+        padding: 5px 12px 8px;
+        font-size: 12px;  
+    }
+    .help-text {
+        font-size: 10px;
+    }
+  }
